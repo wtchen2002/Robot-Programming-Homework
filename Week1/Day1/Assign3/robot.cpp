@@ -12,6 +12,7 @@ int robot::MoveArmTo(int position) {
 int robot::ScorePiece() {
 	if((robotPosition == 6) && (armPosition == 10) && (hasPiece == true)) {
 		score += 1;
+		hasPiece = false;
 	}
 }
 
