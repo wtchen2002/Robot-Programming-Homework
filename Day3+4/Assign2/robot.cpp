@@ -1,39 +1,43 @@
 ﻿#include <iostream>
 #include "robot.h"
 
-int bob::robot::Drive(int distance) {
+namespace bob {
+
+int robot::Drive(int distance) {
 	robotPosition = robotPosition + distance;
 }
 
-int bob::robot::MoveArmTo(int position) {
+int robot::MoveArmTo(int position) {
 	armPosition = position;
 }
 
-int bob::robot::ScorePiece() {
+int robot::ScorePiece() {
 	if((robotPosition == 6) && (armPosition == 10) && (hasPiece == true)) {
 		score += 1;
 		hasPiece = false;
 	}
 }
 
-int bob::robot::PickUpPiece() {
+int robot::PickUpPiece() {
 	if((armPosition == 0) && (hasPiece == false)) {
 		hasPiece = true;
 	}
 }
 
-bool bob::robot::GetHasPiece() const {
+bool robot::GetHasPiece() const {
 	return hasPiece;
 }
 
-int bob::robot::GetPosition() const {
+int robot::GetPosition() const {
 	return robotPosition;
 }
 
-int bob::robot::GetArmPosition() const {
+int robot::GetArmPosition() const {
 	return armPosition;
 }
 
-int bob::robot::GetScore() const {
+int robot::GetScore() const {
 	return score;
+}
+
 }
