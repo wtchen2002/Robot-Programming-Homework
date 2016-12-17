@@ -8,9 +8,7 @@ int main() {
 	std::cout << "How many numbers would you like to enter?" << std::endl;
 	std::cin >> count;
 
-
 	std::vector<int> numberlist;
-
 
 	for (int i = 1; i <= count; i++) {
 		int inputnumber = 0;
