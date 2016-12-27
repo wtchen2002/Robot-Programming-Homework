@@ -6,8 +6,6 @@ class Library {
  public:
   class Book {
    public:
-    void SetIn(bool);
-    void SetDate(std::vector<int>);
     std::string name_;
     bool in_ = true;
     std::vector<int> date_out_; // month, day, year
@@ -26,8 +24,9 @@ class Library {
   std::vector<int> GetDate();
   void AddPatron(std::string);
   void CheckOutBook(Patron, std::string);
+  Patron get_patron(std::string);
   Book search_for_book(std::string);
-  bool check_if_overdue(Book);
+  bool check_if_overdue(std::string);
 };
 
 #endif
