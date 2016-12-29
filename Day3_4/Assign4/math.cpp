@@ -1,9 +1,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include <math.h>
+#include "math.h"
 
-namespace math {
+namespace math2point0 {
 
 double Cap(double number, double min, double max) {
   if(number < min) {

@@ -1,7 +1,7 @@
 #ifndef DAY3+4_ASSIGN4_MATH_H_
 #define DAY3+4_ASSIGN4_MATH_H_
 
-namespace math {
+namespace math2point0 {
 
 double Cap(double, double, double);
 std::vector<double> CapVector(std::vector<double>, double, double);
